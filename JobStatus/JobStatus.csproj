@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C13B7233-4897-482F-A3E2-8071F7FC8CFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JobStatus</RootNamespace>
+    <AssemblyName>JobStatus</AssemblyName>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>JobStatus.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/JobStatus/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebPartCode\JobStatusWebPart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="12\TEMPLATE\FEATURES\JobStatusWebPart\elements.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\JobStatusWebPart\feature.xml" />
+    <EmbeddedResource Include="Resources\book_green.png" />
+    <EmbeddedResource Include="Resources\book_red.png" />
+    <EmbeddedResource Include="Resources\book_yellow.png" />
+    <EmbeddedResource Include="Resources\bug_green.png" />
+    <EmbeddedResource Include="Resources\bug_red.png" />
+    <EmbeddedResource Include="Resources\bug_yellow.png" />
+    <EmbeddedResource Include="Resources\circle_green.png" />
+    <EmbeddedResource Include="Resources\circle_red.png" />
+    <EmbeddedResource Include="Resources\circle_yellow.png" />
+    <EmbeddedResource Include="Resources\cone_green.png" />
+    <EmbeddedResource Include="Resources\cone_red.png" />
+    <EmbeddedResource Include="Resources\cone_yellow.png" />
+    <EmbeddedResource Include="Resources\flag_green.png" />
+    <EmbeddedResource Include="Resources\flag_red.png" />
+    <EmbeddedResource Include="Resources\flag_yellow.png" />
+    <EmbeddedResource Include="Resources\flask_green.png" />
+    <EmbeddedResource Include="Resources\flask_red.png" />
+    <EmbeddedResource Include="Resources\flask_yellow.png" />
+    <EmbeddedResource Include="Resources\pill_green.png" />
+    <EmbeddedResource Include="Resources\pill_red.png" />
+    <EmbeddedResource Include="Resources\pill_yellow.png" />
+    <EmbeddedResource Include="Resources\pin_green.png" />
+    <EmbeddedResource Include="Resources\pin_grey.png" />
+    <EmbeddedResource Include="Resources\pin_red.png" />
+    <EmbeddedResource Include="Resources\pin_yellow.png" />
+    <EmbeddedResource Include="Resources\puzzle_green.png" />
+    <EmbeddedResource Include="Resources\puzzle_red.png" />
+    <EmbeddedResource Include="Resources\puzzle_yellow.png" />
+    <EmbeddedResource Include="Resources\shield_green.png" />
+    <EmbeddedResource Include="Resources\shield_red.png" />
+    <EmbeddedResource Include="Resources\shield_yellow.png" />
+    <EmbeddedResource Include="Resources\star_green.png" />
+    <EmbeddedResource Include="Resources\star_grey.png" />
+    <EmbeddedResource Include="Resources\star_red.png" />
+    <EmbeddedResource Include="Resources\star_yellow.png" />
+    <EmbeddedResource Include="Resources\torso_green.png" />
+    <EmbeddedResource Include="Resources\torso_red.png" />
+    <EmbeddedResource Include="Resources\torso_yellow.png" />
+    <EmbeddedResource Include="Resources\triangle_green.png" />
+    <EmbeddedResource Include="Resources\triangle_red.png" />
+    <EmbeddedResource Include="Resources\triangle_yellow.png" />
+    <Content Include="solutionid.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="12\TEMPLATE\FEATURES\JobStatusWebPart\JobStatusWebPart.webpart" />
+    <None Include="JobStatus.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties SPVisualDev_SPVisualDev_ProjID="Generic" SPVisualDev_WSPSolutionId="0be31803-b486-4a47-a58a-0cc7ef709245" SPVisualDev_ASPXPagesNSsuffix="" SPVisualDev_MasterPagesNSsuffix="" SPVisualDev_WebCustomConstrolNSsuffix="" SPVisualDev_WebPartsNSSuffix="" SPVisualDev_AssemblyBuildType="GAC" SPVisualDev_WSPAdditionalSwitches="" SPVisualDev_IncludedAssemblies="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

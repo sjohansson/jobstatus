@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="1e1c7b47-d914-4c36-99a2-6ed900e030d3"
+          Title="JobStatusWebPart"
+          Description="A Web Part that displays the status of a SQL Server Agent Job."
+          Version="12.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="JobStatusWebPart.webpart" />
+  </ElementManifests>
+</Feature>

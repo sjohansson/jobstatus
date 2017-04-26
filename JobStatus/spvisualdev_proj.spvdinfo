@@ -1,0 +1,22 @@
+<Settings>
+  <DeployTargetServerAddress>
+  </DeployTargetServerAddress>
+  <DeployTargetServerPort>5667</DeployTargetServerPort>
+  <DeployTargetWebApplications>
+  </DeployTargetWebApplications>
+  <DeployTargetServerUserName>
+  </DeployTargetServerUserName>
+  <DeployTargetServerPassword>
+  </DeployTargetServerPassword>
+  <TargetURL>http://dev-moss</TargetURL>
+  <IncludedReferencedAssemblies>
+  </IncludedReferencedAssemblies>
+  <WSPBuildOutputPath>
+  </WSPBuildOutputPath>
+  <RemoteServerUse>False</RemoteServerUse>
+  <RemoteServer>
+  </RemoteServer>
+  <RemoteServerPort>
+  </RemoteServerPort>
+  <RemoteServerUseDifferentCred>False</RemoteServerUseDifferentCred>
+</Settings>
